@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JNU</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div><!-- Wapper Sec -->
+<div id="wrapper_sec"><!-- masterhead -->
+<div id="masterhead"><!-- Logo -->
+<div class="logo"><img src="/assets/jnu_logo.gif" height="73" width="386" /></div>
+<!-- masterhead Right Section -->
+<div class="topright_sec"><!-- top navigation --><!-- Navigation -->
+<div class="topnavigation"></div>
+<div class="clear"></div>
+<div class="top_search"></div>
+<div class="clear"> </div>
+</div>
+<div class="clear"></div>
+<!-- top search -->
+<div class="navigation">
+<div id="smoothmenu1" class="ddsmoothmenu">
+<ul>
+<li class="first"><%= link_to "Home",root_path, :class => "selected" %></li>
+<li style="z-index: 100;"><%= link_to "Programs",homes_program_path %><!-- Sub Menu level 1 -->
+</li>
+<li style="z-index: 99;"><a style="padding-right: 24px;" href="admission.htm">Admissions</a>
+<!-- Sub Menu level 1 -->
+</li>
+<li style="z-index: 98;"><a style="padding-right: 24px;" href="courses.htm">Courses
+Offered</a>
+</li>
+<li><%= link_to "Contact
+Us",homes_contact_path %></a>
+</li>
+</ul>
+</div>
+<!-- navigation ends -->
+</div>
+</div>
+<!-- Content Seciton -->
+<!-- Col1 -->
+<div class="col1"><!-- Banner -->
+<div id="banner">
+<div id="slider2">
+<div style="display: none; z-index: 2; opacity: 1; visibility: visible;" class="contentdiv"> <a href="#"><img src="/assets/home1.jpg" alt="" /></a> </div>
+<div style="display: none; z-index: 3; opacity: 1; visibility: visible;" class="contentdiv"> <a href="#"><img src="/assets/banner1.jpg" alt="" /></a> </div>
+<div style="display: block; z-index: 4; opacity: 1; visibility: visible;" class="contentdiv"> <a href="#"><img src="/assets/home2.jpg" alt="" /></a> </div>
+<div style="display: none; z-index: 1; opacity: 1; visibility: visible;" class="contentdiv"> <a href="#"><img src="/assets/home3.jpg" alt="" /></a> </div>
+</div>
+<div id="paginate-slider2" class="pagination"><a href="#prev" class="prev">Previous</a> <a rel="1" href="#1" class="toc">1</a> <a rel="2" href="#2" class="toc">2</a> <a rel="3" href="#3" class="toc selected">3</a>
+<a rel="4" href="#4" class="toc">4</a>
+<a href="#next" class="next">Next</a></div>
+</div>
+
+<div class="clear"></div>
+
+
+<div id="content123">
+<%= yield %>
+</div>
+<!-- Content Block -->
+<div class="clear">
+  <p><a href="Application Form-MPH-2013.pdf" target="_blank"><img style="border: 0px solid ; width: 177px; height: 31px;" alt="Download Application Form" src="/assets/download1.jpg" /></a></p>
+  <p>Mobile Health (mhealth) Boot Camp <br />
+    June 6, 2013</p>
+  <p><a href="Flyer_JSPH_mHealth.pdf" target="_blank"><img src="/assets/workshop_6_june.jpg" width="250" height="358" /></a></p>
+  <p><strong>Contact </strong> </p>
+  <table width="524" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="265"> Dr. Nitin Joshi<br />
+Assistant Professor &amp; Faculty Coordinator<br />
+Jodhpur School of Public Health<br />
+Mob: - +91 9314620559</td>
+      <td width="259">Mr. Vikas Arora<br />
+Assistant Professor &amp; Finance Coordinator<br />
+Jodhpur School of Public Health<br />
+Mob: - +91 9414301731</td>
+    </tr>
+</table>
+  <p><br />
+  </p>
+  <p>&nbsp;</p>
+</div>
+<!-- col1 ends --> </div>
+<!-- Col2 -->
+<div class="col2">
+<div class="ads"> <a href="#"><img src="/assets/ads.gif" alt="" usemap="#Map" border="0" /> <map name="Map" id="Map"><area shape="rect" coords="9,17,218,129" href="http://www.jodhpurnationaluniversity.com/placement.htm" target="_blank" /><area shape="rect" coords="9,152,232,305" href="http://www.jodhpurnationaluniversity.com/admissionquery.htm" target="_blank" /></map>
+</a> </div>
+<!-- Top Student -->
+<div class="rtab">
+<div class="tab_navigation">
+<ul>
+<li class="active"><a href="#rtab2">Facebook</a>
+</li>
+</ul>
+</div>
+<div class="rtab_content" id="rtab2" style="display: block;">
+<ul>
+<li>
+<div fb-xfbml-state="rendered" class="fb-like-box fb_iframe_widget" data-href="http://www.facebook.com/jnujodhpur" data-width="220" data-height="300" data-show-faces="false" data-stream="true" data-header="true"><span style="height: 300px; width: 220px;"><iframe src="index_files/likebox.htm" class="fb_ltr" style="border: medium none ; overflow: hidden; height: 300px; width: 220px;" name="f20a854c0933c5a" id="f3203712075adac" scrolling="no"></iframe></span></div>
+</li>
+</ul>
+<div class="clear"></div>
+</div>
+</div>
+
+
+
+
+<div>
+<p> </p>
+<p><br />
+</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+<br />
+</div>
+<!-- Footer Section -->
+<div id="bottom_seciton">
+<div id="footer"><!--Find your way --><!-- Help and Support --><!-- Quick Links --><!-- Addmission --><!-- Contact Us --></div>
+<div class="clear"></div>
+</div>
+<!-- Bototm seciton -->
+<div id="bottom_Section"><!-- page bottm -->
+<div id="pagebottom"><!-- copyright -->
+<div class="copyright">© 2012 <a href="http://jodhpurnationaluniversity.com/">Jodhpur
+National University , Jodhpur</a> All Rights Reserved</div>
+<a href="#" class="top">Top</a><!-- Social Networks -->
+<div class="socail_networks">
+<ul>
+<li class="servcies">Follows us on Social Networks</li>
+<li><a href="http://www.facebook.com/jnujodhpur" target="_blank"><img src="/assets/facebook_icon.gif" alt="" /> </a></li>
+<li><a href="http://www.linkedin.com/pub/jodhpur-national-university/45/53/5a" target="_blank"><img src="/assets/linkedin_icon.gif" alt="" /> </a></li>
+<li><a href="http://www.twitter.com/jnujodhpur" target="_blank"><img src="/assets/twitter_icon.gif" alt="" /> </a></li>
+<li><a href="http://www.slideshare.net/jnujodhpur" target="_blank"><img src="/assets/slideshare.jpg" alt="" /> </a></li>
+<li><a href="http://www.youtube.com/jodhpurnationalunvi" target="_blank"><img src="/assets/youtube.jpg" height="28" width="26" /></a></li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+
+
+</body>
+</html>

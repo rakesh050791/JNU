@@ -12,4 +12,8 @@ class HomesController < ApplicationController
 
  end
 
+ def courses
+
+ end
+
 end

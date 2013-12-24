@@ -4,6 +4,10 @@ JNU::Application.routes.draw do
 
   match 'homes/program' => 'homes#program'
 
+  match 'homes/courses' => 'homes#courses'
+
+  match 'homes/admission' => 'homes#admission'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

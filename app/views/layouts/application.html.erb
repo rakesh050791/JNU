@@ -27,14 +27,14 @@
 <li class="first"><%= link_to "Home",root_path, :class => "selected" %></li>
 <li style="z-index: 100;"><%= link_to "Programs",homes_program_path %><!-- Sub Menu level 1 -->
 </li>
-<li style="z-index: 99;"><a style="padding-right: 24px;" href="admission.htm">Admissions</a>
+<li style="z-index: 99;"><%= link_to "Admissions",homes_admission_path %>
 <!-- Sub Menu level 1 -->
 </li>
-<li style="z-index: 98;"><a style="padding-right: 24px;" href="courses.htm">Courses
-Offered</a>
+<li style="z-index: 98;"><%= link_to "Courses
+Offered",homes_courses_path %>
 </li>
 <li><%= link_to "Contact
-Us",homes_contact_path %></a>
+Us",homes_contact_path %>
 </li>
 </ul>
 </div>
